@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Portafolio personal profesional con proyectos, habilidades, repositorios y datos de contacto."
+    >
+    <title>Portafolio Personal | Tu Nombre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <!-- Barra de navegación principal -->
+        <header class="topbar">
+            <a class="brand" href="#inicio">Erick A. Cuichan</a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <a href="#acerca">Acerca de mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#repositorios">Repositorios</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+                <span class="theme-toggle__icon">◐</span>
+                <span class="theme-toggle__text">Tema</span>
+            </button>
+        </header>
+
+        <main>
+            <section class="section section-placeholder" id="welcomePanel">
+                <div class="empty-state">
+                    <p class="eyebrow">Navegación por secciones</p>
+                    <h1>Selecciona una opción del menú para abrir la información</h1>
+                    <p>
+                        Haz clic en Acerca de mí, Proyectos, Repositorios, Habilidades o Contacto para mostrar
+                        solo ese contenido en pantalla.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Sección de inicio y presentación personal -->
+            <section class="hero section content-section" id="inicio" data-panel="acerca" hidden>
+                <div class="hero__content">
+                    <p class="eyebrow">Portafolio profesional</p>
+                    <h1>
+                        Hola, soy <span class="accent">Erick Ariel Cuichan</span>
+                    </h1>
+                    <p class="hero__lead">
+                        <!-- Reemplaza este texto con tu presentación principal -->
+                        Estudiante de la carrera Ingeniería en Ciencias de la Computación 
+                        de la Escuela Politécnica Nacional.
+                    </p>
+
+                    <div class="hero__meta">
+                        <div class="info-chip">
+                            <span>Carrera</span>
+                            <strong>Ingeniería en Ciencias de la Computación</strong>
+                        </div>
+                        <div class="info-chip">
+                            <span>Perfil</span>
+                            <strong>Estudiante</strong>
+                        </div>
+                        <div class="info-chip">
+                            <span>Ubicación</span>
+                            <strong>Quito, Ecuador</strong>
+                            
+                        </div>
+                    </div>
+
+                    <div class="hero__actions">
+                        <a class="button button--primary" href="#proyectos">Ver proyectos</a>
+                        <a class="button button--secondary" href="#contacto">Contactarme</a>
+                    </div>
+                </div>
+
+                <aside class="profile-card" id="acerca">
+                    <img
+                        class="profile-card__image"
+                        src="assets/ImagenErick.jpeg"
+                        alt="Foto de perfil de ejemplo"
+                    >
+                    <div class="profile-card__body">
+                        <p class="profile-card__label">Acerca de mí</p>
+                        <h2>Erick Ariel Cuichan</h2>
+                        <p>
+                            <!-- Reemplaza este texto con una descripción más personal -->
+                            Me interesa participar en proyectos donde pueda aplicar programación, análisis,
+                            diseño de soluciones y aprendizaje continuo.
+                        </p>
+                        <ul class="detail-list">
+                            <li><strong>Área de estudio:</strong> Ingeniería </li>
+                            <li><strong>Correo:</strong> erick.cuichan01@epn.edu.ec</li>
+                            <li><strong>Disponibilidad:</strong> Prácticas, freelance o colaboración</li>
+                        </ul>
+                    </div>
+                </aside>
+            </section>
+
+            <!-- Sección para enlazar tu perfil de GitHub y repositorios destacados -->
+            <section class="section section-grid content-section" id="repositorios" data-panel="repositorios" hidden>
+                <div class="section-heading">
+                    <p class="eyebrow">Perfil de GitHub</p>
+                    <h2>Repositorios y actividad técnica</h2>
+                    <p>
+                        Esta sección está pensada para mostrar tu perfil de GitHub, tus proyectos destacados y
+                        las tecnologías con las que trabajas con más frecuencia.
+                    </p>
+                </div>
+
+                <div class="github-panel">
+                    <div>
+                        <p class="github-panel__label">GitHub</p>
+                        <h3>@tu-usuario</h3>
+                        <p>
+                            <!-- Reemplaza el usuario y la descripción por tu información real -->
+                            Puedes usar este espacio para resumir el tipo de proyectos que sueles publicar,
+                            tus intereses técnicos y tu enfoque profesional.
+                        </p>
+                    </div>
+                    <a class="button button--primary" href="https://github.com/tu-usuario" target="_blank" rel="noreferrer">
+                        Visitar GitHub
+                    </a>
+                </div>
+
+                <div class="card-grid" id="repoGrid"></div>
+            </section>
+
+            <!-- Sección de intereses personales o profesionales -->
+            <section class="section content-section" id="intereses" data-panel="acerca" hidden>
+                <div class="section-heading">
+                    <p class="eyebrow">Intereses</p>
+                    <h2>Áreas que me motivan a seguir aprendiendo</h2>
+                </div>
+                <div class="interest-grid" id="interestGrid"></div>
+            </section>
+
+            <!-- Sección de proyectos. El contenido se genera desde script.js -->
+            <section class="section content-section" id="proyectos" data-panel="proyectos" hidden>
+                <div class="section-heading">
+                    <p class="eyebrow">Proyectos</p>
+                    <h2>Trabajos destacados y casos que puedo explicar</h2>
+                    <p>
+                        Los proyectos se cargan desde <strong>script.js</strong> para que puedas agregar,
+                        quitar o editar tarjetas de forma sencilla.
+                    </p>
+                </div>
+                <div class="project-grid" id="projectGrid"></div>
+            </section>
+
+            <!-- Sección de habilidades técnicas -->
+            <section class="section content-section" id="habilidades" data-panel="habilidades" hidden>
+                <div class="section-heading">
+                    <p class="eyebrow">Habilidades</p>
+                    <h2>Tecnologías y herramientas</h2>
+                </div>
+                <div class="skills-layout">
+                    <div class="skill-panel" id="skillGroups"></div>
+                    <div class="skill-summary">
+                        <h3>Perfil técnico</h3>
+                        <p>
+                            Usa este espacio para resumir tu enfoque. Por ejemplo: desarrollo frontend,
+                            backend, análisis de datos, bases de datos, redes o automatización.
+                        </p>
+                        <div class="skill-bars" id="skillBars"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección con formación, certificados, experiencia u otra información adicional -->
+            <section class="section content-section" id="otros" data-panel="acerca" hidden>
+                <div class="section-heading">
+                    <p class="eyebrow">Otros</p>
+                    <h2>Información adicional para fortalecer tu presentación</h2>
+                </div>
+                <div class="other-grid" id="otherGrid"></div>
+            </section>
+
+            <!-- Sección final de contacto -->
+            <section class="section contact-section content-section" id="contacto" data-panel="contacto" hidden>
+                <div class="section-heading">
+                    <p class="eyebrow">Contacto</p>
+                    <h2>Hablemos de ideas, proyectos o colaboración</h2>
+                </div>
+                <div class="contact-card">
+                    <div>
+                        
+                        <ul class="detail-list">
+                            <li><strong>Correo:</strong> cuichanerick01@epn.edu.ec</li>
+                            <li><strong>LinkedIn:</strong> linkedin.com/in/Erick Cuichán</li>
+                            <li><strong>GitHub:</strong> github.com/Erick-1213</li>
+                        </ul>
+                    </div>
+                    <a class="button button--primary" href="mailto:cuichanerick01@epn.edu.ec">Enviar correo</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Pie de página -->
+        <footer class="footer">
+            <p>© <span id="currentYear"></span> Tu Nombre Completo. Todos los derechos reservados.</p>
+            <p>"Construyendo proyectos con orden, curiosidad y propósito."</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
