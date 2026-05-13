@@ -4,23 +4,12 @@
 // Repositorios destacados de tu GitHub.
 const featuredRepositories = [
     {
-        name: 'Sistema de Inventario',
-        description: 'Aplicación para registrar productos, controlar stock y consultar reportes básicos.',
-        technologies: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
-        url: 'https://github.com/tu-usuario/sistema-inventario'
+        name: 'Agencia de tecnologia',
+        description: 'Aplicación que modela dos sedes aplicando bases de datos distribuida.',
+        technologies: ['SQL Server'],
+        url: 'https://github.com/Erick-1213/BD-Distribuido.git'
     },
-    {
-        name: 'Analizador de Datos',
-        description: 'Proyecto académico para procesar datos y visualizar resultados de forma clara.',
-        technologies: ['Python', 'Pandas', 'Matplotlib'],
-        url: 'https://github.com/tu-usuario/analizador-datos'
-    },
-    {
-        name: 'Portal Universitario',
-        description: 'Interfaz web orientada a centralizar información y módulos para estudiantes.',
-        technologies: ['React', 'Node.js', 'MongoDB'],
-        url: 'https://github.com/tu-usuario/portal-universitario'
-    }
+    
 ];
 
 // Intereses personales o profesionales.
@@ -112,15 +101,15 @@ const skillLevels = [
 const otherSections = [
     {
         title: 'Formación académica',
-        description: 'Ingeniería en Sistemas o carrera afín. Incluye universidad, período y enfoque principal.'
+        description: 'Bachiller.'
     },
     {
         title: 'Certificados',
-        description: 'Cursos de programación, bases de datos, análisis de datos, redes o herramientas técnicas.'
+        description: 'Cursos de Python, Curso fundamentos de bases de datos, Curso Fudamentos de Redes y Conectividad, Curso de Scrum.'
     },
     {
         title: 'Experiencia',
-        description: 'Prácticas, voluntariado, proyectos freelance, ayudantías o colaboraciones destacables.'
+        description: 'Prácticas , Proyectos, Ayudantías.'
     }
 ];
 
